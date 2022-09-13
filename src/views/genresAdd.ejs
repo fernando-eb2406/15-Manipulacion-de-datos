@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>genre add</title>
+    <link rel='stylesheet' href='/css/style.css' />
+</head>
+
+<body>
+    <figure>
+        <img src="/img/logo-DH.png" alt="Logo Digital House">
+      </figure>
+    <h1 class="titulo">Agregar genero</h1>
+    <br>
+    <section class="formulario">
+        <form action="/genres/create" method="POST">
+            <label for="title">nombre </label>
+            <p><input type="text" name="name" id="name" required></p>
+            <label for="ranking">Raking </label>
+            <p><input type="number" name="ranking" id="ranking" required> </p>
+            <label for="active">active </label>
+            <p><input type="number" name="active" id="active" required> </p>
+            <br>
+            <p> <button class="botonAgregar" type="submit">Agregar</button>
+            <br>
+            <a  class="botonVolver" href="/genres">Listado de generos</a></p>
+        </form>
+    </section>
+    
+</body>
+
+</html>
